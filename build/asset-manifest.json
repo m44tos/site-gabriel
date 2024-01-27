@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5b7f76f.css",
+    "main.js": "/static/js/main.6db1c415.js",
+    "static/media/photoUns.jpg": "/static/media/photoUns.e0c11935a4c3f3c32945.jpg",
+    "static/media/marioGif.gif": "/static/media/marioGif.201c88f97b1f62f9fc95.gif",
+    "static/media/printPokedex.PNG": "/static/media/printPokedex.de9531baf2bf134e692c.PNG",
+    "static/media/Gabrielimg.jpeg": "/static/media/Gabrielimg.0702e55069384aa22e09.jpeg",
+    "index.html": "/index.html",
+    "main.c5b7f76f.css.map": "/static/css/main.c5b7f76f.css.map",
+    "main.6db1c415.js.map": "/static/js/main.6db1c415.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5b7f76f.css",
+    "static/js/main.6db1c415.js"
+  ]
+}
