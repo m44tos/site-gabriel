@@ -1,0 +1,28 @@
+$altura-com-desconto: calc(100vh - 69px);
+
+.gameContainer{
+    background-color: #222024;
+    height: $altura-com-desconto;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height:$altura-com-desconto;
+    .gifContainer{
+        background: url('../../assets/images/marioGif.gif') center/cover;
+        width: 60%;
+        height: 60%;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+        margin-top: 70px;
+    }
+    h6,h4{
+        font-weight: 400;
+    }
+    h6>a:hover{
+        color: #ffc83d;
+    }
+}

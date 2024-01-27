@@ -1,0 +1,84 @@
+$altura-com-desconto: calc(100vh - 69px);
+
+.homeContainer{
+    background-color: #222024;
+    height: $altura-com-desconto;
+}
+.bgImage {
+    position: relative;
+    width: 30vw;
+    height: $altura-com-desconto;
+    background-size: cover;
+    background-image: url('../../assets/images/photoUns.jpg');
+    z-index: 50;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	gap: 10px;
+    top: 50%; /* Ajuste conforme necessário */
+    left: 50%; /* Ajuste conforme necessário */
+    transform: translate(-50%, -50%); /* Move para o centro */
+    z-index: 100;
+}
+.AP1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #1f1c23;
+	padding: 20px;
+	width: 150px;
+	height: 270px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+	.fotoGab {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		margin: 30px auto;
+		background-image: url('../../assets/images/Gabrielimg.jpeg');
+		background-size: cover;
+	}
+    h3{
+        line-height: 1;
+ 
+        span{
+            font-size: 1.2em;
+            color: #ffc83d;
+        }
+    }
+    h5{
+        margin-top: 30px;
+        line-height: 1;
+    }
+}
+
+.AP2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	background-color: #1f1c23;
+	padding: 20px;
+	width: 500px;
+	height: auto;
+	line-height: 20px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+    h4,p{
+        font-weight: 400;
+    }
+}

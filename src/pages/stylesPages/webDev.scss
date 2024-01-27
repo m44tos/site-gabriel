@@ -1,0 +1,111 @@
+$altura-com-desconto: calc(100vh - 69px);
+$cor-titulos: #ffc83d;
+@mixin hover-transform($scale) {
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale($scale);
+    }
+}
+
+.webContainer{
+    background-color: #222024;
+    height: $altura-com-desconto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    gap: 35px;
+}
+
+.proPokedex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    width: 250px;
+    height: 400px;
+    padding: 25px 20px;
+    border-radius: 10px;
+
+    background-color: #1f1c23;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .5);
+    h3{
+        color: $cor-titulos;
+    }
+    hr{
+        width: 100%;
+        height: 1px;
+        margin: 5px 0;
+        background-color:rgba(240, 248, 255, 0.5);
+    }
+    .pokedex-image {
+        width: 230px;
+        height: 160px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }    
+    p{
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: lighter;
+    }
+    ul{
+        margin-top: 15px;
+        list-style: none;
+        li{
+            &:active {
+                position: relative;
+                top: 1px;
+            }
+        }
+        a{
+            color: $cor-titulos;
+        }
+    }
+
+    @include hover-transform(1.03);
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 250px;
+    height: 400px;
+    padding: 25px 20px;
+    border-radius: 10px;
+
+    background-color: #1f1c23;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .5);
+
+    @include hover-transform(1.03);
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+    height: 400px;
+    padding: 25px 20px;
+    border-radius: 10px;
+
+    background-color: #1f1c23;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .5);
+
+    @include hover-transform(1.03);
+}
