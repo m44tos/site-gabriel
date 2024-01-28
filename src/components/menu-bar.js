@@ -45,9 +45,9 @@ function MenuBar() {
         </li>
       </ul>
       <ul className="btnRedes">
-        <li><a className="fa-brands fa-github" href='https://github.com/m44tos' target='_blank' rel='noopener noreferrer' alt='Link para o GitHub'></a></li>
-        <li><a className="fa-brands fa-linkedin" href='https://www.linkedin.com/in/gabriel-m44tos/' target='_blank' rel='noopener noreferrer'alt='Link para o LinkedIn'></a></li>
-        <li><a className="fa-brands fa-instagram" href='https://www.instagram.com/m44tos' target='_blank' rel='noopener noreferrer' alt='Link para o Instagram'></a></li>
+        <li><a className="fa-brands fa-github" href='https://github.com/m44tos' target='_blank' rel='noopener noreferrer' aria-label='Link para o GitHub'></a></li>
+        <li><a className="fa-brands fa-linkedin" href='https://www.linkedin.com/in/gabriel-m44tos/' target='_blank' rel='noopener noreferrer' aria-label='Link para o LinkedIn'></a></li>
+        <li><a className="fa-brands fa-instagram" href='https://www.instagram.com/m44tos' target='_blank' rel='noopener noreferrer' aria-label='Link para o Instagram'></a></li>
       </ul>
     </div>
   );
