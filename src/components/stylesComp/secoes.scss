@@ -1,0 +1,54 @@
+.secao{
+    background-color: #1f1c23;
+    width: 900px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    .titulo{
+        cursor:pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-solid{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #ffc83d;
+    }
+}
+  
+.conteudoSecao {
+    background-color: #1f1c23;
+    max-height: 0;
+    width: 900px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      padding: 15px;
+      font-weight: lighter;
+      line-height: 1.5;
+    }
+    hr{
+        background-color: rgba(240, 248, 255, 0.1);
+        width: 100%;
+        height: 1px;
+    }
+}
+
+.visivel {
+    max-height: 300px;
+}
+  
+.fa-circle-chevron-down {
+    transition: transform 0.2s ease;
+}
+.fa-circle-chevron-down:not(.A) {
+    transform: rotate(0deg);
+}
+.A .fa-circle-chevron-down {
+    transform: rotate(180deg);
+}
+  

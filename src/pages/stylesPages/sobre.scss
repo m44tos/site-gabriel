@@ -1,6 +1,7 @@
-$altura-com-desconto: calc(100vh - 69px);
-
-.sobreContainer{
-    background-color: #222024;
-    height: $altura-com-desconto;
+.conteudoSobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 70px;
 }
