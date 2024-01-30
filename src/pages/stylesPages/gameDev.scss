@@ -1,7 +1,6 @@
-$altura-com-desconto: calc(100vh - 69px);
+$altura-com-desconto: calc(100vh - 70px);
 
 .gameContainer{
-    background-color: #222024;
     height: $altura-com-desconto;
 }
 .conteudo{
@@ -17,7 +16,7 @@ $altura-com-desconto: calc(100vh - 69px);
         width: 60%;
         height: 60%;
         box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
-        margin-top: 70px;
+        margin-top: 60px;
     }
     h6,h4{
         font-weight: 400;

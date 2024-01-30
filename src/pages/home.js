@@ -4,13 +4,12 @@ import './stylesPages/home.scss';
 function Home() {
   return (
     <div className='homeContainer'>
-      <div className='bgImage'></div>
       <div class="cards">
             <div class="AP1">
                 <div class="fotoGab"></div>
                 <div className='textAP1'>
                     <h3>GABRIEL<br/><span>MATOS</span></h3>
-                    <h5>FRONT END DEVELOPER</h5>
+                    <h5>FRONT END<br/>DEVELOPER</h5>
                 </div>
             </div>
             <div class="AP2">

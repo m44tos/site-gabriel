@@ -9,8 +9,8 @@ function Sobre() {
           <Secoes title='Sobre mim' content='Olá! Eu sou Gabriel Matos, um autodidata entusiasta por desenvolvimento web, criação de jogos e programação.<br/> Aos 21 anos, estou dedicado a aprimorar minhas habilidades e conhecimentos nessas áreas, buscando constantemente oportunidades de aprendizado e crescimento profissional.'/>
           <Secoes title='Habilidades' content='<div align="center">
   <a href="https://github.com/m44tos">
-    <img height="160em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=m44tos&show_icons=true&theme=onedark&include_all_commits=true&count_private=true"/>
-    <img height="160em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=m44tos&layout=compact&langs_count=7&theme=onedark"/>
+    <img  height="160em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=m44tos&show_icons=true&theme=onedark&include_all_commits=true&count_private=true"/>
+    <img  height="160em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=m44tos&layout=compact&langs_count=7&theme=onedark"/>
   </a>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content: center; gap: 5px;"><br/>
@@ -32,7 +32,7 @@ function Sobre() {
 
           <Secoes title='Educação e Formação' content='Cursei Desenvolvimento de Jogos Digitais no IFBA (Instituto Federal da Bahia) antes de trancar minha matrícula por motivos pessoais. Busco constantemente cursos online e recursos educacionais para aprimorar minhas habilidades em desenvolvimento web, criação de jogos e programação em geral.'/>
           <Secoes title='Cursos e Certificações' content='Completei com êxito diversos cursos em plataformas como Alura, Fundação Bradesco, DIO e IFRS (Instituto Federal do Rio Grande do Sul), abrangendo tópicos relacionados a desenvolvimento web, criação de jogos e programação em diversas linguagens.'/>
-          <Secoes title='Contato' content='Se você está interessado em colaborar em projetos ou tem oportunidades para um desenvolvedor autodidata motivado, sinta-se à vontade para entrar em contato comigo através do meu e-mail: gabrielm.n@hotmail.com'/>
+          <Secoes title='Contato' content='Se você está interessado em colaborar em projetos ou tem oportunidades para um desenvolvedor autodidata motivado, sinta-se à vontade para entrar em contato comigo através do meu e-mail: <span>gabrielm.n@hotmail.com</span>'/>
         </div>
     </div>
     );

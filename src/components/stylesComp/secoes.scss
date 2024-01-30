@@ -18,7 +18,7 @@
   
 .conteudoSecao {
     background-color: #1f1c23;
-    max-height: 0;
+    max-height:0;
     width: 900px;
     overflow: hidden;
     transition: max-height 0.4s ease;
@@ -30,6 +30,7 @@
       padding: 15px;
       font-weight: lighter;
       line-height: 1.5;
+      overflow-y: auto;
     }
     hr{
         background-color: rgba(240, 248, 255, 0.1);
@@ -38,17 +39,34 @@
     }
 }
 
-.visivel {
-    max-height: 300px;
+.conteudoSecao.contentVisivel {
+    max-height: 1500px;
 }
   
 .fa-circle-chevron-down {
     transition: transform 0.2s ease;
 }
-.fa-circle-chevron-down:not(.A) {
+.fa-circle-chevron-down:not(.titleVisivel) {
     transform: rotate(0deg);
 }
-.A .fa-circle-chevron-down {
+.titleVisivel .fa-circle-chevron-down {
     transform: rotate(180deg);
 }
-  
+
+@media (max-width: 900px) {
+    .secao{
+        width: 300px;
+    }
+    .conteudoSecao{
+        p{
+            a>img{
+                width: 300px;
+            }
+            span{
+                color: #ffc83d;
+            }
+        }
+        width: 300px;
+    }
+    
+}

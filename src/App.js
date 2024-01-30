@@ -6,10 +6,12 @@ import GameDev from './pages/gameDev.js';
 import WebDev from './pages/wedDev.js';
 import MenuBar from './components/menu-bar.js';
 import './components/scrollbar.scss';
+import ParticlesBackground from './components/particlesBg.js'
 
 function App() {
   return (
     <div>
+  <ParticlesBackground/>
       <Router>
         <MenuBar/>
         <Routes>

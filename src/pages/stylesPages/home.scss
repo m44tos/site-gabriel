@@ -1,38 +1,18 @@
-$altura-com-desconto: calc(100vh - 69px);
+$altura-com-desconto: calc(100vh - 70px);
 
 .homeContainer{
-    background-color: #222024;
     height: $altura-com-desconto;
-}
-.bgImage {
-    position: relative;
-    width: 30vw;
-    height: $altura-com-desconto;
-    background-size: cover;
-    background-image: url('../../assets/images/photoUns.jpg');
-    z-index: 50;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.2);
-      z-index: 1;
-      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
-    }
+    width: 100vw;
 }
 
 .cards {
 	display: flex;
 	flex-direction: row;
-	position: absolute;
+	position: fixed;
 	gap: 10px;
-    top: 50%; /* Ajuste conforme necessário */
-    left: 50%; /* Ajuste conforme necessário */
-    transform: translate(-50%, -50%); /* Move para o centro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
 }
 .AP1 {
@@ -75,10 +55,39 @@ $altura-com-desconto: calc(100vh - 69px);
 	background-color: #1f1c23;
 	padding: 20px;
 	width: 500px;
-	height: auto;
+    height: 270px;
 	line-height: 20px;
 	box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+    h4{
+        text-align: center;
+    }
     h4,p{
         font-weight: 400;
     }
+}
+
+@media (max-width: 750px) {
+
+    .cards{
+        gap: 20px;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%);
+        flex-direction: column;
+        .AP1{
+            flex-direction: row;
+            width: 270px;
+            height: 150px;
+            gap: 20px;
+            justify-content: center;
+            .fotoGab {
+                margin:0;
+            }
+        }
+        .AP2{
+            height: auto;
+            width: 270px;
+        }
+    }
+
 }

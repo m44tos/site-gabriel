@@ -2,22 +2,23 @@ import React, { useState } from 'react';
 import './stylesComp/secoes.scss';
 
 function Secoes(props) {
-  const [estaVisivel, setVisibilidade] = useState(false); // Estado para controlar a visibilidade do conteúdo
+  const [contentV, setVisiContent] = useState(false);
+  const [titleV, setVisiTitle] = useState(false);
 
-  const toggleContent = () => {
-    setVisibilidade(!estaVisivel); // Inverte o estado de visibilidade
+  const toggleAll = () => {
+    setVisiTitle(!titleV);
+    setVisiContent(!contentV);
   };
-
   return (
     <div className="secao">
       <h1
-        className={`titulo ${estaVisivel ? 'A' : ''}`}
-        onClick={toggleContent}
+        className={`titulo ${titleV ? 'titleVisivel' : ''}`}
+        onClick={toggleAll}
       >
         {props.title}&nbsp;
         <i className="fa-solid fa-circle-chevron-down"></i>
       </h1>
-      <div className={`conteudoSecao ${estaVisivel ? 'visivel' : ''}`}>
+      <div className={`conteudoSecao ${contentV ? 'contentVisivel' : ''}`}>
         <hr/>
         <p dangerouslySetInnerHTML={{ __html: props.content }}></p>
       </div>

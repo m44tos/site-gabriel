@@ -1,4 +1,4 @@
-$altura-com-desconto: calc(100vh - 69px);
+$altura-com-desconto: calc(100vh - 70px);
 $cor-titulos: #ffc83d;
 @mixin hover-transform($scale) {
     transition: transform 0.3s ease;
@@ -8,9 +8,7 @@ $cor-titulos: #ffc83d;
 }
 
 .webContainer{
-    background-color: #222024;
     height: $altura-com-desconto;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,8 +18,8 @@ $cor-titulos: #ffc83d;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     gap: 35px;
 }
 
@@ -108,4 +106,12 @@ $cor-titulos: #ffc83d;
 	box-shadow: 0 1px 8px rgba(0, 0, 0, .5);
 
     @include hover-transform(1.03);
+}
+
+@media(max-width: 900px){
+    .projContainer{
+        display:flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
 }
