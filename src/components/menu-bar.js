@@ -28,10 +28,10 @@ function MenuBar() {
         <li><Link to='/' onClick={removerClasseActive}>Início</Link></li>
         <li><Link to='/Sobre' onClick={removerClasseActive}>Sobre</Link></li>
         <li className={`menuPort ${menuAberto ? 'A' : ''}`}onClick={toggleMenu}>
-          <a>
-            Portfólio&nbsp;
+          <button>
+          Portfólio&nbsp;
             <i className="fa-solid fa-caret-down" />
-          </a>
+          </button>
           <ul className={`dropdown-menu ${menuAberto ? 'dropAberto' : ''}`}onClick={toggleMenu}>
             <Link className="dropdown-item" to="/webdev"onClick={removerClasseActive}>Web Development</Link>
             <Link className="dropdown-item" to="/gamedev"onClick={removerClasseActive}>Game Development</Link>
